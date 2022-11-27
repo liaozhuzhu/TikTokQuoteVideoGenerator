@@ -18,17 +18,18 @@ This bot does not upload to TikTok automatically in order to stay in line with c
 1. Clone this repository
 2. Run `pip install -r requirements.txt`
 3. Follow [this link](https://www.imagemagick.org/script/download.php)
-4. Download music and videos (and fetch quotes or create your own texts)
-5. Run `python3 app.py`
-6. Wait for "final.mp4" file to be created
-7. Play "final.mp4" in QuickTime or VLC Media Player
+4. Download music & videos and store them in directories named: "music" & "videos" **These names are strict**
+5. Fetch quotes (default) or create your own texts
+6. Run `python3 app.py`
+7. Wait for "final.mp4" file to be created
+8. Play "final.mp4" in QuickTime or VLC Media Player
 
 ## How it works
 
 1. A quote from [ZenQuotes](https://zenquotes.io/api) is randomly selected from their api
 2. A video & song is randomly selected from my vast list of downloaded files
 3. These 3 things are compiled together into a single mp4 file (named "final.mp4") using Moviepy
-4. The caption is then copied to your clipboard using `pyperclip` for ease of upload
+4. The caption is then copied to your clipboard using pyperclip for ease of upload
 5. That's literally it
 
 ## Statistics
