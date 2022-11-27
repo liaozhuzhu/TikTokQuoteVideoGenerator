@@ -6,7 +6,7 @@ charset-normalizer==2.1.1
 decorator==4.4.2
 exceptiongroup==1.0.4
 h11==0.14.0
-idna==3.4
+idna==3.4 
 imageio==2.22.4
 imageio-ffmpeg==0.4.7
 macholib==1.16.2
