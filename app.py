@@ -9,7 +9,7 @@ def main():
     quote = get_quote()
     text = TextClip(quote, fontsize=40, size=(560, 0), color="white", kerning=2, font="Verdana-Bold", method='caption', stroke_color="black", stroke_width=2)
     
-    # set clip
+    # set clip 
     randomClip = get_video()
     videoclip = VideoFileClip(f"videos/{randomClip}").subclip(0, 8)
     
