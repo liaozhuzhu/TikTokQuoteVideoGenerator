@@ -5,7 +5,7 @@ import pyperclip
 
 #/Users/liaozhu/cs-projects/quotebot/virt/bin/python3
 
-def main(): 
+def main():  
     quote = get_quote()
     text = TextClip(quote, fontsize=40, size=(560, 0), color="white", kerning=2, font="Verdana-Bold", method='caption', stroke_color="black", stroke_width=2)
     
