@@ -28,7 +28,8 @@ This bot does not upload to TikTok automatically in order to stay in line with c
 1. A quote from [ZenQuotes](https://zenquotes.io/api) is randomly selected from their api
 2. A video & song is randomly selected from my vast list of downloaded files
 3. These 3 things are compiled together into a single mp4 file (named "final.mp4") using Moviepy
-4. That's literally it
+4. The caption is then copied to your clipboard using `pyperclip` for ease of upload
+5. That's literally it
 
 ## Statistics
 
