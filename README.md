@@ -4,7 +4,7 @@
 
 Entire process (besides upload) is done automatically.
 
-## Motivation
+## Motivation 
 
 I see thousands of videos across TikTok that simply have 3 things: music, a video background, and an inspiring quote. After watching [Coding With Lewis](https://www.youtube.com/watch?v=3gjcY_00U1w),
 I was inspired to try making one of these bots on my own.

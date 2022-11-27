@@ -21,7 +21,7 @@ def main():
     get_final(videoclip, audioclip, text)
     
     #get caption
-    pyperclip.copy('#fyp #motivation #quote #python #code #phonk') #set caption hashtags
+    pyperclip.copy('#fyp #motivation #anime #python #code #phonk') #set caption hashtags
     print("Caption copied to clipboard!") #verify caption has been copied
     
 def get_quote():
