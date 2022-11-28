@@ -32,7 +32,7 @@ This bot does not upload to TikTok automatically in order to stay in line with c
 4. The caption is then copied to your clipboard using pyperclip for ease of upload
 5. That's literally it
 
-## Statistics
+## Statistics (11/27/2022)
 
-- As of 11/27/2022, there are 776880 possible combinations of videos that can be made (note there are only 240 possible video/music combinations)
-- Average 74.14 views per video
+- There are 776880 possible combinations of videos that can be made (note there are only 240 possible video/music combinations)
+- Averages 74.14 views per video
