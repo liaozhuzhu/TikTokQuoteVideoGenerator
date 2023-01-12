@@ -5,20 +5,28 @@ import pyperclip
 
 def main():  
     
-    #get quote
-    quote = get_quote()
-    text = TextClip(quote, fontsize=40, size=(560, 0), color="white", kerning=2, font="Verdana-Bold", method='caption', stroke_color="black", stroke_width=2) #set textclip to quote
-     
-    #get clip 
-    randomClip = get_video()
-    videoclip = VideoFileClip(f"videos/{randomClip}").subclip(0, 8) #set videoclip to random video
+    # try:
+    #     numVideos = int(input('Enter number of videos to generate: '))
+    #     valid = True 
+    # except ValueError:
+    #     print('Please only input digits')
     
-    #get audio
-    randomAudio = get_audio()
-    audioclip = AudioFileClip(f"music/{randomAudio}") #set audioclip to random music
+    for i in range(5):
     
-    #get final
-    get_final(videoclip, audioclip, text)
+        #get quote
+        quote = get_quote()
+        text = TextClip(quote, fontsize=40, size=(560, 0), color="white", kerning=2, font="Verdana-Bold", method='caption', stroke_color="black", stroke_width=2) #set textclip to quote
+        
+        #get clip 
+        randomClip = get_video()
+        videoclip = VideoFileClip(f"videos/{randomClip}").subclip(0, 8) #set videoclip to random video
+        
+        #get audio
+        randomAudio = get_audio()
+        audioclip = AudioFileClip(f"music/{randomAudio}") #set audioclip to random music
+        
+        #get final
+        get_final(videoclip, audioclip, text, i)
     
     #get caption
     pyperclip.copy('#fyp #motivation #anime #python #code #phonk') #set caption hashtags
@@ -43,11 +51,11 @@ def get_audio():
         randomAudio = random.choice(os.listdir("music")) #set random video
     return randomAudio #return video
 
-def get_final(videoclip, audioclip, text):
+def get_final(videoclip, audioclip, text, title):
     finalclip = CompositeVideoClip([videoclip, text.set_pos("center")]).set_duration(8) #set final video duration to 8s
     finalclip = finalclip.set_audio(audioclip).set_duration(8) #set video audio and duration to 8s
     finalclip = finalclip.resize((1080, 1920)) #set video width, height
-    finalclip.write_videofile("final.mp4", temp_audiofile="temp-audio.m4a", remove_temp=True, codec="libx264", audio_codec="aac") #compiles/writes file 'final.mp4'
+    finalclip.write_videofile(f"final{title}.mp4", temp_audiofile="temp-audio.m4a", remove_temp=True, codec="libx264", audio_codec="aac") #compiles/writes file 'final.mp4'
     
     
 if __name__ == "__main__":
