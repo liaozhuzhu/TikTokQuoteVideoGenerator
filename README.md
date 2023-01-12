@@ -31,6 +31,7 @@ This bot does not upload to TikTok automatically in order to stay in line with c
 3. These 3 things are compiled together into a single mp4 file (named "final.mp4") using Moviepy
 4. The caption is then copied to your clipboard using pyperclip for ease of upload
 5. That's literally it
+6. **01/12/2023 Update**: The bot now generates 5 videos ("final0.mp4" - "final4.mp4") so the user can choose between multiple videos to upload. Thank you [@jerseymason](https://github.com/jerseymason) for issuing the idea.
 
 ## Statistics (11/27/2022)
 
