@@ -1,7 +1,5 @@
 # TikTok Quote Bot Generator
 
-[Link to TikTok Account](https://www.tiktok.com/@liaozhuzhubot)
-
 Entire process (besides upload) is done automatically.
 
 ## Motivation 
